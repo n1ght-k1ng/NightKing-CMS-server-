@@ -1,0 +1,37 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -r esm index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ../client npm run build --prefix ../client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.30.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "email-validator": "^2.0.4",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-jwt": "^6.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "nanoid": "^2.1.11",
+    "next-transpile-modules": "^9.0.0",
+    "nodeman": "^1.1.2",
+    "nodemon": "^2.0.19",
+    "react-hot-toast": "^2.3.0",
+    "slugify": "^1.6.5"
+  },
+  "overrides": {
+    "prosemirror-tables": "^1.1.1"
+  }
+}
