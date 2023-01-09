@@ -32,21 +32,21 @@ app.use(cors());
 app.use(morgan("dev")); 
 
 // deployment 
-__dirname = path.resolve()
-if(process.env.NODE_ENV === 'production')
-{
+// __dirname = path.resolve()
+// if(process.env.NODE_ENV === 'production')
+// {
  
-  app.use(express.static(path.join(__dirname, '../client/.next/static/chunks/pages')))
-  app.get('*' , (req, res) => {
-    res.sendFile(path.join(__dirname,'..' ,'client', '.next', 'static','chunks','pages', 'index.js'))
-  })
-}
-else{
+//   app.use(express.static(path.join(__dirname, '../client/.next/static/chunks/pages')))
+//   app.get('*' , (req, res) => {
+//     res.sendFile(path.join(__dirname,'..' ,'client', '.next', 'static','chunks','pages', 'index.js'))
+//   })
+// }
+// else{
   app.get("/" , (req, res) => {
     res.send("Api running")
   })
 
-}
+
 
 
 // route middlewares
