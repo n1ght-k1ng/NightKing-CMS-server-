@@ -1,4 +1,4 @@
-import Category  from '../models/Category';
+import Category  from '../models/category';
  
 import slugify from 'slugify'
 import Post from '../models/post';
