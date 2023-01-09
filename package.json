@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon -r esm index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ../client npm run build --prefix ../client"
+    // "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ../client npm run build --prefix ../client"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,7 @@
     "express": "^4.17.1",
     "express-formidable": "^1.2.0",
     "express-jwt": "^6.1.2",
+    "firebase": "^9.15.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.12",
     "morgan": "^1.10.0",
