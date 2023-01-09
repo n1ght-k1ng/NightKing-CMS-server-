@@ -5,7 +5,6 @@ import jwt from "jsonwebtoken";
 import nanoid from "nanoid";
 import validator from 'email-validator'
 
-import toast  from "react-hot-toast"
 // sendgrid
 require("dotenv").config();
 const sgMail = require("@sendgrid/mail");
